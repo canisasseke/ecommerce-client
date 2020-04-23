@@ -1,0 +1,10 @@
+<p-menubar [model]="items">
+	<div *ngIf="!keycloakService.kc.authenticated">
+		<button type="button" pButton icon="pi pi-bars" class="ui-button-primary" label="Login" (click)="onLogin()"></button>
+	</div>
+    <div *ngIf="keycloakService.kc.authenticated">
+	<span>{{keycloakService.kc.tokenParsed['name']}}</span>
+		<p-menu #menu [popup]="true" [model]="rightitems"></p-menu>
+		<button type="button" pButton icon="pi pi-bars" label="Parameters" (click)="menu.toggle($event)"></button>
+    </div>
+</p-menubar>

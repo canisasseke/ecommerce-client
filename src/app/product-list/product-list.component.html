@@ -1,0 +1,24 @@
+<br>
+<p-table [value]="products">
+	<ng-template pTemplate="caption">
+        List of Product
+    </ng-template>
+    <ng-template pTemplate="header">
+        <tr>
+            <th>id</th>
+            <th>Titre</th>
+            <th>Description</th>
+            <th>Prix</th>
+            <th>Image</th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-product>
+        <tr>
+            <td>{{product.id}}</td>
+            <td>{{product.titre}}</td>
+            <td>{{product.description}}</td>
+            <td>{{product.prix}}</td>
+            <td><img src= "{{product.image}}" alt="photo product" ></td>
+        </tr>
+    </ng-template>
+</p-table>
