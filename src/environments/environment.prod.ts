@@ -1,4 +1,9 @@
 export const environment = {
   production: true,
-  urlAddress: 'http://localhost:8888'
+  apiHostUrl: window['env']['apiHostUrl'] || 'default',
+  keycloakRealm: window['env']['keycloakRealm'] || 'default',
+  keycloakUrl: window['env']['keycloakUrl'] || 'default',
+  keycloakClientId: window['env']['keycloakClientId'] || 'default',
+  debug: window['env']['debug'] || false
+
 };

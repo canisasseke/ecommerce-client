@@ -26,7 +26,7 @@ export class RepositoryService {
     return this.httpClient.delete(this.createCompleteRoute(route));
   }
   private createCompleteRoute(route: string) {
-    return `${this.environementService.urlAddress}/${route}`;
+    return `${this.environementService.apiHostUrl}/${route}`;
   }
 
   private generateHeaders() {

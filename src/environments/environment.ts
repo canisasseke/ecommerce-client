@@ -4,7 +4,11 @@
 
 export const environment = {
   production: false,
-  urlAddress: 'http://localhost:8888'
+  apiHostUrl: 'http://localhost:9001',
+  keycloakRealm: 'ecommerce-realm',
+  keycloakUrl: 'http://localhost:8080/auth',
+  keycloakClientId: 'ecommerce-client',
+  debug: false
 };
 
 /*

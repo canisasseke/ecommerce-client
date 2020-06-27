@@ -22,7 +22,7 @@ export class MenuComponent implements OnInit {
                         icon: 'pi pi-fw pi-plus',
                         items: [
                             {label: 'List', routerLink: ['/products/list']},
-                            {label: 'create', visible: this.keycloakService.kc.hasRealmRole('app-manager')},
+                            {label: 'create'},
                         ]
                     },
                     {label: 'Open'},

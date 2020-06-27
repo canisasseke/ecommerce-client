@@ -6,7 +6,10 @@ import { environment } from 'src/environments/environment';
 })
 export class EnvironmentUrlService {
 
-  urlAddress = environment.urlAddress;
+  apiHostUrl = environment.apiHostUrl;
+  keycloakRealm = environment.keycloakRealm;
+  keycloakUrl = environment.keycloakUrl;
+  keycloakClientId = environment.keycloakClientId;
   constructor() { }
 
 }
